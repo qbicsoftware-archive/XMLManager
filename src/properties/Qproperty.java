@@ -40,8 +40,8 @@ public class Qproperty {
 
     @XmlAttribute(name = "label", required = true)
     protected String label;
-    @XmlAttribute(name = "unit", required = true)
-    protected String unit;
+    @XmlAttribute(name = "unit", required = false)
+    protected Unit unit;
     @XmlAttribute(name = "value", required = true)
     protected String value;
 
@@ -77,7 +77,7 @@ public class Qproperty {
      *     {@link String }
      *     
      */
-    public String getUnit() {
+    public Unit getUnit() {
         return unit;
     }
 
@@ -89,8 +89,8 @@ public class Qproperty {
      *     {@link String }
      *     
      */
-    public void setUnit(String value) {
-        this.unit = value;
+    public void setUnit(Unit unit) {
+        this.unit = unit;
     }
 
     /**

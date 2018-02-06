@@ -1,9 +1,10 @@
 package properties;
 //
-// This file was xml_new by the JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.4-2 
-// See <a href="http://java.sun.com/properties/jaxb">http://java.sun.com/properties/jaxb</a> 
-// Any modifications to this file will be lost upon recompilation of the source schema. 
-// Generated on: 2014.11.14 at 02:49:30 PM CET 
+// This file was xml_new by the JavaTM Architecture for XML Binding(JAXB) Reference Implementation,
+// v2.2.4-2
+// See <a href="http://java.sun.com/properties/jaxb">http://java.sun.com/properties/jaxb</a>
+// Any modifications to this file will be lost upon recompilation of the source schema.
+// Generated on: 2014.11.14 at 02:49:30 PM CET
 //
 
 
@@ -16,9 +17,11 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -39,83 +42,71 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "qcontinous")
 public class Qcontinous {
 
-    @XmlAttribute(name = "label", required = true)
-    protected String label;
-    @XmlAttribute(name = "unit", required = true)
-    protected String unit;
-    @XmlAttribute(name = "value", required = true)
-    protected BigDecimal value;
+  @XmlAttribute(name = "label", required = true)
+  protected String label;
+  @XmlAttribute(name = "unit", required = true)
+  protected Unit unit;
+  @XmlAttribute(name = "value", required = true)
+  protected BigDecimal value;
 
-    /**
-     * Gets the value of the label property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getLabel() {
-        return label;
-    }
+  /**
+   * Gets the value of the label property.
+   * 
+   * @return possible object is {@link String }
+   * 
+   */
+  public String getLabel() {
+    return label;
+  }
 
-    /**
-     * Sets the value of the label property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setLabel(String value) {
-        this.label = value;
-    }
+  /**
+   * Sets the value of the label property.
+   * 
+   * @param value allowed object is {@link String }
+   * 
+   */
+  public void setLabel(String value) {
+    this.label = value;
+  }
 
-    /**
-     * Gets the value of the unit property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getUnit() {
-        return unit;
-    }
+  /**
+   * Gets the value of the unit property.
+   * 
+   * @return possible object is {@link String }
+   * 
+   */
+  public Unit getUnit() {
+    return unit;
+  }
 
-    /**
-     * Sets the value of the unit property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setUnit(String value) {
-        this.unit = value;
-    }
+  /**
+   * Sets the value of the unit property.
+   * 
+   * @param value allowed object is {@link String }
+   * 
+   */
+  public void setUnit(Unit unit) {
+    this.unit = unit;
+  }
 
-    /**
-     * Gets the value of the value property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getValue() {
-        return value;
-    }
+  /**
+   * Gets the value of the value property.
+   * 
+   * @return possible object is {@link BigDecimal }
+   * 
+   */
+  public BigDecimal getValue() {
+    return value;
+  }
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setValue(BigDecimal value) {
-        this.value = value;
-    }
+  /**
+   * Sets the value of the value property.
+   * 
+   * @param value allowed object is {@link BigDecimal }
+   * 
+   */
+  public void setValue(BigDecimal value) {
+    this.value = value;
+  }
 
 }
