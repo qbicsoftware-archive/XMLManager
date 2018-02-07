@@ -214,7 +214,7 @@ public class XMLParser {
   }
 
   public JAXBElement<properties.Qproperties> parseXMLString(String xml) throws JAXBException {
-    if (xml == null)
+    if (xml == null || xml.isEmpty())
       return getEmptyXML();
     JAXBContext jc = JAXBContext.newInstance("properties");
     Unmarshaller unmarshaller = jc.createUnmarshaller();
@@ -225,12 +225,6 @@ public class XMLParser {
 
   public static void main(String[] args) throws JAXBException, SAXException, IOException {
     XMLParser p = new XMLParser();
-    String xml = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>"
-        + "<qproperties> <qfactors> <qcategorical label=\"test\" value=\"val1\"/> </qfactors>"
-        + "<qproperty label=\"mass\" unit=\"kg\" value=\"10\"/> <qproperty label=\"bla\" value=\"blub\"/> </qproperties>";
-
-    // XMLValidator v = new XMLValidator();
-    // v.validate(xml, new File("schemas/sample_prop_schema.xsd"));
   }
 
   public JAXBElement<properties.Qproperties> getEmptyXML() throws JAXBException {
