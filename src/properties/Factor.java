@@ -1,5 +1,11 @@
 package properties;
 
+@Deprecated
+/**
+ * use Property with PropertyType Factor
+ * @author Andreas Friedrich
+ *
+ */
 public class Factor {
   
   private String label;
